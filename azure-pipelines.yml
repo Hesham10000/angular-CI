@@ -23,6 +23,9 @@ jobs:
       verbose: false
 
   - task: PublishBuildArtifacts@1
-    displayName: 'Publish artifacts: drop'
+    displayName: 'Publish artifacts: app-header'
     inputs:
       PathtoPublish: '$(Parameters.PathtoPublish)'
+      ArtifactName: '$(Parameters.ArtifactName)'
+      publishLocation: FilePath
+      TargetPath: '$(Parameters.TargetPath)'
