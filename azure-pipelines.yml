@@ -21,6 +21,7 @@ jobs:
      inputs:
       sourceFolder: '$(Build.SourcesDirectory)'
       contents: '**/$(BuildConfiguration)/**/?(*.gitignore)'
+      TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
    - task: PublishBuildArtifacts@1
      inputs:
