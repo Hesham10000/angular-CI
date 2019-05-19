@@ -23,4 +23,6 @@ jobs:
   - task: PublishBuildArtifacts@1
     displayName: 'Publish artifacts: app-header'
     inputs:
-      PathtoPublish: client/lib/app-header
+     PathtoPublish: client/lib/app-header
+     ArtifactName: app-header
+     publishLocation: Container
