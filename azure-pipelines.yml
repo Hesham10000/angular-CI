@@ -20,7 +20,7 @@ jobs:
    - task: CopyFiles@2
      inputs:
       sourceFolder: '$(Build.SourcesDirectory)'
-      contents: '**/$(BuildConfiguration)/**/?(*.gitignore)'
+      contents: '$(Build.SourcesDirectory)/client/src/app/header'
       TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
    - task: PublishBuildArtifacts@1
